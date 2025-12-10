@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pengembangan Budaya Lokal — Energi Alternatif</title>
+
+  <!-- link ke file CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- font optional (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Informasi tentang Batik: sejarah, motif, dan cara melestarikannya." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Pengembangan Budaya Lokal — <span class="accent">Energi Alternatif</span></h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#sejarah">Sejarah</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="beranda" class="hero">
+      <div class="container">
+        <h2>Selamat Datang Di Forum Pembelajaran Kita</h2>
+        <p>Menjelajahi motif, sejarah, dan cara melestarikan budaya lokal dan energi alternatif.</p>
+        <button id="tombol-aksi">Pelajari Lebih Lanjut</button>
+      </div>
+    </section>
+
+    <section id="sejarah" class="content-section">
+      <div class="container">
+        <h3>literasi Singkat</h3>
+        <p> Budaya lokal dan energi alternatif memiliki hubungan sinergis yang kuat di Indonesia, di mana kearifan tradisional sering kali mencerminkan prinsip-prinsip keberlanjutan. Praktik budaya, seperti arsitektur rumah adat yang efisien secara termal dan sistem konservasi sumber daya alam (misalnya, Sasi), secara inheren mendukung tujuan energi terbarukan dengan meminimalkan konsumsi energi dan menjaga keseimbangan ekologis. Implementasi teknologi seperti Panel Surya atau PLTMH di desa adat tidak hanya menyediakan listrik bersih, tetapi juga memberdayakan masyarakat dan melestarikan lingkungan sekitar, memastikan bahwa transisi menuju energi yang lebih hijau berakar kuat pada nilai-nilai dan identitas lokal..</p>
+        <div class="feature-grid">
+          <article class="card">
+            <h4>Motif</h4>
+            <p>Setiap daerah punya motif khas — contohnya Parang, Kawung, Mega Mendung.</p>
+          </article>
+          <article class="card">
+            <h4>Teknik</h4>
+            <p>Menggunakan malam (wax) dan pewarna alami atau sintetis.</p>
+          </article>
+          <article class="card">
+            <h4>Pelestarian</h4>
+            <p>Pendidikan, workshop, dan dukungan UMKM lokal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeri" class="content-section">
+      <div class="container">
+        <h3>Galeri</h3>
+        <div class="gallery">
+          <img src="images/batik1.jpg" alt="Motif Batik 1" />
+          <img src="images/batik2.jpg" alt="Motif Batik 2" />
+          <img src="images/batik3.jpg" alt="Motif Batik 3" />
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="content-section">
+      <div class="container">
+        <h3>Hubungi Kami</h3>
+        <form id="contact-form">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 — Pelestarian Budaya Lokal</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // contoh JS sederhana
+    document.getElementById('tombol-aksi').addEventListener('click', function () {
+      document.querySelector('#sejarah').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // contoh handler form (prevent default)
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Terima kasih! Pesan Anda telah dikirim (simulasi).');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
